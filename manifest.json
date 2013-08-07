@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "huboard-ext",
+  "description": "some huboard extensions",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "http://huboard.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://huboard.com/*"],
+      "js": [
+        "js/jquery.js", 
+        "js/assignees.js"
+      ],
+      "css": [
+        "css/font-awesome.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
