@@ -4,8 +4,6 @@
   "description": "some huboard extensions",
   "version": "1.0",
   "permissions": [
-    "tabs",
-    "cookies",
     "http://huboard.com/*"
   ],
   "content_scripts": [
