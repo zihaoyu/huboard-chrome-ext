@@ -1,8 +1,13 @@
+$('.nav:not(.pull-right)').append('<button id="btn-assignees" class="btn-assignees btn btn-small" data-toggle="button">Assignees</button>');
+
 var toggle = function() {
-  var panel = $('.page-header-wrapper ol');
-  panel.toggle(panel.is(':hidden'));
-  alert('toggled');
+  setTimeout(function() {
+    var panel = $('.page-header-wrapper ol');
+    var pressed = $('#btn-assignees').hasClass('active');
+    panel.toggle(pressed);
+  }, 100); // need some time for button state to change
 };
 
-$('.nav:not(.pull-right)').append('<a class="btn btn-small btn-assignees" onclick="toggle();"><i class="icon-collapse"></i></a>');
+$('#btn-assignees').on('click', toggle);
 
+toggle(); // kick it off
