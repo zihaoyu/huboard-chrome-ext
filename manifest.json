@@ -5,6 +5,7 @@
   "version": "1.0",
   "permissions": [
     "tabs",
+    "cookies",
     "http://huboard.com/*"
   ],
   "content_scripts": [
@@ -15,7 +16,8 @@
         "js/assignees.js"
       ],
       "css": [
-        "css/font-awesome.css"
+        "css/font-awesome.css",
+        "css/main.css"
       ],
       "run_at": "document_idle"
     }

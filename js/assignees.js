@@ -4,5 +4,5 @@ var toggle = function() {
   alert('toggled');
 };
 
-$('.nav.pull-right').append('<button class="btn btn-small" onclick="toggle();"><i class="icon-collapse"></i> Asgn</button>');
+$('.nav:not(.pull-right)').append('<a class="btn btn-small btn-assignees" onclick="toggle();"><i class="icon-collapse"></i></a>');
 
