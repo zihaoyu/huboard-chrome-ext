@@ -1,4 +1,4 @@
-var localStorageAssigneesOption = 'hbe_assignees';
+var localStorageAssigneesOption = 'hce_assignees';
 
 function optionGetShowAssignees() {
   return (localStorage[localStorageAssigneesOption] || 'true') === 'true';
@@ -15,7 +15,7 @@ if (optionGetShowAssignees()) {
 
 $('.nav:not(.pull-right)').append('<button id="btn-assignees" class="' + btnClass + '" data-toggle="button">Assignees</button>');
 
-var toggle = function() {
+var toggleAssignees = function() {
   setTimeout(function() {
     var panel = $('.page-header-wrapper ol');
     var pressed = $('#btn-assignees').hasClass('active');
@@ -24,7 +24,7 @@ var toggle = function() {
   }, 100); // need some time for button state to change
 };
 
-$('#btn-assignees').on('click', toggle);
+$('#btn-assignees').on('click', toggleAssignees);
 
-toggle(); // kick it off
+toggleAssignees(); // kick it off
 

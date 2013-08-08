@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "huboard-ext",
+  "name": "huboard-chrome-ext",
   "description": "some huboard extensions",
   "version": "1.0",
   "permissions": [
@@ -8,10 +8,14 @@
   ],
   "content_scripts": [
     {
-      "matches": ["http://huboard.com/*"],
+      "matches": [
+        "http://huboard.com/*/board", 
+        "http://huboard.com/*/backlog"
+      ],
       "js": [
         "js/jquery.js", 
-        "js/assignees.js"
+        "js/assignees.js",
+        "js/drawer.js"
       ],
       "css": [
         "css/font-awesome.css",
