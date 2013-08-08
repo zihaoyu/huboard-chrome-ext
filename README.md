@@ -1,4 +1,4 @@
-huboard-ext
+huboard-chrome-ext
 ==========
 A Google Chrome extension for [huboard](https://github.com/rauhryan/huboard) tweaks.
 
