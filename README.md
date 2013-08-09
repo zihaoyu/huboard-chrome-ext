@@ -14,3 +14,6 @@ Show or hide team members' Gravatars if they take up too much vertical space.
 
 ### Drawer Status
 Remember drawer status and restore it after reloading the tab.
+
+### Linkify Author and Repository
+Convert author and repository name to hyperlinks to Github.

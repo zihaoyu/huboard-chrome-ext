@@ -15,7 +15,8 @@
       "js": [
         "js/jquery.js", 
         "js/assignees.js",
-        "js/drawer.js"
+        "js/drawer.js",
+        "js/linkify.js"
       ],
       "css": [
         "css/font-awesome.css",
