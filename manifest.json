@@ -9,8 +9,11 @@
   "content_scripts": [
     {
       "matches": [
-        "http://huboard.com/*/board", 
-        "http://huboard.com/*/backlog"
+        "http://huboard.com/*/*"
+      ],
+      "exclude_matches": [
+        "http://huboard.com/",
+        "http://huboard.com/repositories/*"
       ],
       "js": [
         "js/jquery.js", 
